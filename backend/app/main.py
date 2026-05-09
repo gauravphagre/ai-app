@@ -1,17 +1,38 @@
-from app.observability.telemetry import setup_telemetry
+import logging
+
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
-from app.routes.chat import router as chat_router
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
 
-app = FastAPI()
+from prometheus_client import generate_latest
 
-setup_telemetry(app)
+from app.routes.chat import router as chat_router
+from app.observability.telemetry import setup_telemetry
 
-app.include_router(chat_router)
 
-@app.get("/")
-def home():
-    return {"status": "ok"}
+# Configure logger
+logging.basicConfig(level=logging.INFO)
+
+logger = logging.getLogger("ai-backend")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+
+    logger.info("Starting application...")
+
+    setup_telemetry(app)
+
+    yield
+
+    logger.info("Shutting down application...")
+
+
+app = FastAPI(
+    lifespan=lifespan
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,3 +41,20 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(chat_router)
+
+
+@app.get("/")
+def home():
+    logger.info("Health check endpoint called.")
+    return {"status": "ok"}
+
+
+@app.get("/metrics")
+def metrics():
+    logger.debug("Metrics endpoint scraped.")
+    return Response(
+        generate_latest(),
+        media_type="text/plain"
+    )
