@@ -1,12 +1,27 @@
+from prometheus_client import Counter, Histogram
 import time
-from prometheus_client import generate_latest
 
-def count_tokens(text: str):
-    return len(text.split())
+CHAT_REQUESTS = Counter(
+    "chat_requests_total",
+    "Total chat requests"
+)
 
-def track_latency(start_time: float):
-    return time.time() - start_time
+CHAT_LATENCY = Histogram(
+    "chat_latency_seconds",
+    "Chat request latency"
+)
 
-@app.get("/metrics")
-def metrics():
-    return Response(generate_latest(), media_type="text/plain")
+TOKEN_USAGE = Counter(
+    "chat_tokens_total",
+    "Tokens generated"
+)
+
+def count_tokens(response):
+    tokens = len(response.split())
+    TOKEN_USAGE.inc(tokens)
+    return tokens
+
+def track_latency(start):
+    duration = time.time() - start
+    CHAT_LATENCY.observe(duration)
+    return duration
