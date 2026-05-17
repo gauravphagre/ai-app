@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.70.0"
   },
-  "ReportID": "019e1a54-fa1b-7bfc-8f31-def1f16e47c5",
-  "CreatedAt": "2026-05-12T03:57:17.211788324Z",
-  "ArtifactID": "sha256:52c40aec3200950c12d2d3a3e089cd32d4ed48a80f496c09335feacab2f55518",
+  "ReportID": "019e3461-deaf-7074-b102-c14b58063d0b",
+  "CreatedAt": "2026-05-17T05:21:29.775032333Z",
+  "ArtifactID": "sha256:3390919f5d1c13524c7882141ba51256d491b92e9dbcc4f29e38c1455cfb4638",
   "ArtifactName": "ai-frontend",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,7 +14,7 @@
       "Family": "alpine",
       "Name": "3.23.4"
     },
-    "ImageID": "sha256:0c1568bd19db06d063e5b0fe9da6cec15824e6a94a1fffb7ecee116d1aa9784b",
+    "ImageID": "sha256:1b7bbec2fcf8e769cb3a87117ed698f5e644693b8aeebb2b2372b4caaeb60657",
     "DiffIDs": [
       "sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8cce4ee82194da255f61e1",
       "sha256:4983b93ee7967564f02cbf6162b75010ce557404a539fba05ee19a0eae01acbc",
@@ -29,7 +29,7 @@
       "ai-frontend:latest"
     ],
     "RepoDigests": [
-      "ai-frontend@sha256:0c1568bd19db06d063e5b0fe9da6cec15824e6a94a1fffb7ecee116d1aa9784b"
+      "ai-frontend@sha256:1b7bbec2fcf8e769cb3a87117ed698f5e644693b8aeebb2b2372b4caaeb60657"
     ],
     "Reference": "ai-frontend:latest",
     "ImageConfig": {
@@ -29959,7 +29959,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:09bca19e279a54b9bd08913c78f79ad3ae8e5f338ef47ef9f3f910ba7e5d334c",
+          "Fingerprint": "sha256:76f6a38d2f4936fa541f8f67cc01850cf1ed51272a43c8ae8610f6a8335328b6",
           "Title": "@tootallnate/once: @tootallnate/once: Denial of Service due to incorrect control flow scoping with AbortSignal",
           "Description": "Versions of the package @tootallnate/once before 3.0.1 are vulnerable to Incorrect Control Flow Scoping in promise resolving when AbortSignal option is used. The Promise remains in a permanently pending state after the signal is aborted, causing any await or .then() usage to hang indefinitely. This can cause a control-flow leak that can lead to stalled requests, blocked workers, or degraded application availability.",
           "Severity": "LOW",
@@ -30020,7 +30020,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:9e8fa03d8dff7416877849129dc73b5fca7eb09258e2e4d13e7a199f7d834e14",
+          "Fingerprint": "sha256:c798efaca217a00b69d96c86619e6b467a626af3f8c33fd6c2868c9303b21d9f",
           "Title": "brace-expansion: brace-expansion: Denial of Service via zero step value in brace pattern",
           "Description": "The brace-expansion library generates arbitrary strings containing a common prefix and suffix. Prior to versions 5.0.5, 3.0.2, 2.0.3, and 1.1.13, a brace pattern with a zero step value (e.g., `{1..2..0}`) causes the sequence generation loop to run indefinitely, making the process hang for seconds and allocate heaps of memory. Versions 5.0.5, 3.0.2, 2.0.3, and 1.1.13 fix the issue. As a workaround, sanitize strings passed to `expand()` to ensure a step value of `0` is not used.",
           "Severity": "MEDIUM",
@@ -30091,7 +30091,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:83d4ed1769d667779f5167881080422625fc6e71e50df2dcfb88b7fbf9c2396d",
+          "Fingerprint": "sha256:3dafb121523557c9ee8ed35b7ec097766449fe24d56409b0630630c85b40a18d",
           "Title": "brace-expansion: juliangruber brace-expansion index.js expand redos",
           "Description": "A vulnerability was found in juliangruber brace-expansion up to 1.1.11/2.0.1/3.0.0/4.0.0. It has been rated as problematic. Affected by this issue is the function expand of the file index.js. The manipulation leads to inefficient regular expression complexity. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 1.1.12, 2.0.2, 3.0.1 and 4.0.1 is able to address this issue. The name of the patch is a5b98a4f30d7813266b221435e1eaaf25a1b0ac5. It is recommended to upgrade the affected component.",
           "Severity": "LOW",
@@ -30162,7 +30162,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:c7d33a27613b81cf64dc9f2a8c26a15d634de7a67923fe6c766bdd83bf886538",
+          "Fingerprint": "sha256:c31ee3253477695c3f847338a3c11fc56a4ef2031f203d2ec43770c039838c2f",
           "Title": "cross-spawn: regular expression denial of service",
           "Description": "Versions of the package cross-spawn before 6.0.6, from 7.0.0 and before 7.0.5 are vulnerable to Regular Expression Denial of Service (ReDoS) due to improper input sanitization. An attacker can increase the CPU usage and crash the program by crafting a very large and well crafted string.",
           "Severity": "HIGH",
@@ -30230,7 +30230,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:28949973d1b1f9073f85b352dacaa54997926a1832df5cdb75c4e9e5f5d6a16a",
+          "Fingerprint": "sha256:bf41c2b7b917471cc5e30e5653a945f2bce949a648d6321b2d0fa5c0d53d27b1",
           "Title": "jsdiff: denial of service vulnerability in parsePatch and applyPatch",
           "Description": "jsdiff is a JavaScript text differencing implementation. Prior to versions 8.0.3, 5.2.2, 4.0.4, and 3.5.1, attempting to parse a patch whose filename headers contain the line break characters `\\r`, `\\u2028`, or `\\u2029` can cause the `parsePatch` method to enter an infinite loop. It then consumes memory without limit until the process crashes due to running out of memory. Applications are therefore likely to be vulnerable to a denial-of-service attack if they call `parsePatch` with a user-provided patch as input. A large payload is not needed to trigger the vulnerability, so size limits on user input do not provide any protection. Furthermore, some applications may be vulnerable even when calling `parsePatch` on a patch generated by the application itself if the user is nonetheless able to control the filename headers (e.g. by directly providing the filenames of the files to be diffed). The `applyPatch` method is similarly affected if (and only if) called with a string representation of a patch as an argument, since under the hood it parses that string using `parsePatch`. Other methods of the library are unaffected. Finally, a second and lesser interdependent bug - a ReDOS - also exhibits when those same line break characters are present in a patch's *patch* header (also known as its \"leading garbage\"). A maliciously-crafted patch header of length *n* can take `parsePatch` O(*n*³) time to parse. Versions 8.0.3, 5.2.2, 4.0.4, and 3.5.1 contain a fix. As a workaround, do not attempt to parse patches that contain any of these characters: `\\r`, `\\u2028`, or `\\u2029`.",
           "Severity": "LOW",
@@ -30296,7 +30296,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:cf1d3db87dc450c96674a5391593bd556a4fb033e14a9751e69382aa2e1a242d",
+          "Fingerprint": "sha256:2906c9bf34bdaca9c4b2fd0cabd8c215c9bb1c9619f64817b1e52502ff319af5",
           "Title": "glob: glob: Command Injection Vulnerability via Malicious Filenames",
           "Description": "Glob matches files using patterns the shell uses. Starting in version 10.2.0 and prior to versions 10.5.0 and 11.1.0, the glob CLI contains a command injection vulnerability in its -c/--cmd option that allows arbitrary command execution when processing files with malicious names. When glob -c \u003ccommand\u003e \u003cpatterns\u003e are used, matched filenames are passed to a shell with shell: true, enabling shell metacharacters in filenames to trigger command injection and achieve arbitrary code execution under the user or CI account privileges. This issue has been patched in versions 10.5.0 and 11.1.0.",
           "Severity": "HIGH",
@@ -30355,10 +30355,13 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:67899d3b5170754536908814b0d195077750e3655e257e657ca3f782f4e8c111",
-          "Title": "ip-address has XSS in Address6 HTML-emitting methods",
-          "Description": "### Summary\n\n`Address6.group()` and `Address6.link()` do not HTML-escape attacker-controlled content before embedding it in the HTML strings they return, and `AddressError.parseMessage` (emitted by the `Address6` constructor for invalid input) can contain unescaped attacker-controlled content in one branch. An application that (1) passes untrusted input to `Address6` and (2) renders the output of these methods, or the thrown error's `parseMessage`, as HTML (e.g. via `innerHTML`) is vulnerable to cross-site scripting. A related issue in `v6.helpers.spanAll()` produced malformed markup but was not exploitable; it is hardened in the same release for consistency.\n\n### Details\n\nFour related issues were identified and fixed together:\n\n1. **`Address6.group()`: zone ID injection.** The `Address6` constructor stores the raw input (including any IPv6 zone ID) in `this.address` before zone stripping. `group()` then passed `this.address` to `helpers.simpleGroup()`, which wrapped each `:`-separated segment in a `\u003cspan\u003e` element without HTML-escaping the content. A zone ID containing HTML markup was embedded verbatim.\n2. **`Address6.link({ prefix, className })`: attribute-value injection.** `link()` concatenated user-supplied `prefix` and `className` into the `href=\"…\"` and `class=\"…\"` attributes without escaping. A caller passing untrusted content through these options could inject event handlers (e.g. `onmouseover`) and achieve XSS.\n3. **`Address6` constructor: leading-zero IPv4 error path.** The leading-zero branch in `parse4in6()` built `AddressError.parseMessage` by concatenating the raw address through `String.replace()`. Because `parse4in6()` runs before the bad-character check, any characters in the groups preceding the IPv4 suffix flowed into the error's HTML unescaped. Consumers who render `parseMessage` as HTML (its documented purpose — it already contains `\u003cspan class=\"parse-error\"\u003e` markup) could be XSS'd by a crafted input such as `\u003cimg src=x onerror=alert(1)\u003e:10.0.01.1`.\n4. **`v6.helpers.spanAll()`: attribute-value injection (defense in depth).** `spanAll()` embedded each character of its input into a `class=\"digit value-${n} …\"` attribute without escaping. Because `split('')` limits `n` to a single character this was not exploitable in practice, but it produced malformed markup and is fixed for consistency.\n\n### Affected Versions\n\nAll versions up to and including `10.1.0`.\n\n### Patched Version\n\n`10.1.1`.\n\n### Impact\n\nReal-world exposure is believed to be extremely limited. Analysis of all 425 dependent npm packages as well as GitHub code search found zero consumers of `group()`, `link()`, or `spanAll()`: these HTML-emitting surfaces appear to be unused across published npm packages and public repositories. Applications using only the address-parsing and comparison APIs (`isValid`, `correctForm`, `isInSubnet`, `bigInt`, etc.) are not affected.\n\nConsumers who **do** render the output of `group()`, `link()`, `spanAll()`, or `AddressError.parseMessage` as HTML against untrusted input should upgrade.\n\n### PoC\n\n```javascript\nconst { Address6 } = require('ip-address');\nconst addr = new Address6('fe80::1%\u003cimg src=x onerror=alert(1)\u003e');\ndocument.body.innerHTML = addr.group();  // fires the onerror handler in 10.1.0\n```\n\n### Workarounds\n\nIf users cannot upgrade immediately:\n\n- Do not pass untrusted input to the `Address6` constructor, or\n- Never render the output of `group()`, `link()`, or `spanAll()`, nor the `parseMessage` field of any thrown `AddressError`, as HTML; treat these values as text only, or run them through [DOMPurify](https://github.com/cure53/DOMPurify) before inserting into the DOM (DOMPurify's default configuration preserves the library's intended `\u003cspan\u003e` wrapping while stripping any injected event handlers), or\n- Validate input with `Address6.isValid()` and reject anything that contains a zone identifier (a `%` character) or characters outside `[0-9a-fA-F:/]` before passing it to the constructor.\n\n### Lack of separate CVEs\n\nGiven the evidence that these methods are not used, and given that they are all of the same construction, maintainers do not think it's relevant or useful to create a separate CVE for each library method.\n\n### Credit\n\nip-address thanks @scovetta for reporting this issue.",
+          "Fingerprint": "sha256:27f0af2ff30ded2c55da62eb27acf22069b01e32947d5000073d67844239c074",
+          "Title": "ip-address is a library for parsing and manipulating IPv4 and IPv6 add ...",
+          "Description": "ip-address is a library for parsing and manipulating IPv4 and IPv6 addresses in JavaScript. Prior to 10.1.1, Address6.group() and Address6.link() do not HTML-escape attacker-controlled content before embedding it in the HTML strings they return, and AddressError.parseMessage (emitted by the Address6 constructor for invalid input) can contain unescaped attacker-controlled content in one branch. An application that (1) passes untrusted input to Address6 and (2) renders the output of these methods, or the thrown error's parseMessage, as HTML (e.g. via innerHTML) is vulnerable to cross-site scripting. This vulnerability is fixed in 10.1.1.",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-79"
+          ],
           "VendorSeverity": {
             "ghsa": 2
           },
@@ -30370,8 +30373,11 @@
           },
           "References": [
             "https://github.com/beaugunderson/ip-address",
-            "https://github.com/beaugunderson/ip-address/security/advisories/GHSA-v2v4-37r5-5v8g"
-          ]
+            "https://github.com/beaugunderson/ip-address/security/advisories/GHSA-v2v4-37r5-5v8g",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-42338"
+          ],
+          "PublishedDate": "2026-05-12T20:16:41.13Z",
+          "LastModifiedDate": "2026-05-13T16:32:31.457Z"
         },
         {
           "VulnerabilityID": "CVE-2026-26996",
@@ -30399,7 +30405,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:fddd380770b7e501db27cac932a6db74e87bfdeaa3e37e157b6912abf262edd9",
+          "Fingerprint": "sha256:97d0fffaa99d15b66af271b96dcebf0b3273ad7f96315249b0963779e221f4d5",
           "Title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
           "Description": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Versions 10.2.0 and below are vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive * wildcards followed by a literal character that doesn't appear in the test string. Each * compiles to a separate [^/]*? regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits. The time complexity is O(4^N) where N is the number of * characters. With N=15, a single minimatch() call takes ~2 seconds. With N=34, it hangs effectively forever. Any application that passes user-controlled strings to minimatch() as the pattern argument is vulnerable to DoS. This issue has been fixed in version 10.2.1.",
           "Severity": "HIGH",
@@ -30482,7 +30488,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:3f02eaeb21cc29858fdef613fd87ad11bd66c68aafaed3aec547514723b7dfe7",
+          "Fingerprint": "sha256:50bb7bd28a4894f954340e7c4e1930f74fb6bd04fa0a0f424464b6bc448b8379",
           "Title": "minimatch: minimatch: Denial of Service due to unbounded recursive backtracking via crafted glob patterns",
           "Description": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Prior to version 10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, and 3.1.3, `matchOne()` performs unbounded recursive backtracking when a glob pattern contains multiple non-adjacent `**` (GLOBSTAR) segments and the input path does not match. The time complexity is O(C(n, k)) -- binomial -- where `n` is the number of path segments and `k` is the number of globstars. With k=11 and n=30, a call to the default `minimatch()` API stalls for roughly 5 seconds. With k=13, it exceeds 15 seconds. No memoization or call budget exists to bound this behavior. Any application where an attacker can influence the glob pattern passed to `minimatch()` is vulnerable. The realistic attack surface includes build tools and task runners that accept user-supplied glob arguments (ESLint, Webpack, Rollup config), multi-tenant systems where one tenant configures glob-based rules that run in a shared process, admin or developer interfaces that accept ignore-rule or filter configuration as globs, and CI/CD pipelines that evaluate user-submitted config files containing glob patterns. An attacker who can place a crafted pattern into any of these paths can stall the Node.js event loop for tens of seconds per invocation. The pattern is 56 bytes for a 5-second stall and does not require authentication in contexts where pattern input is part of the feature. Versions 10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, and 3.1.3 fix the issue.",
           "Severity": "HIGH",
@@ -30540,7 +30546,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:01d205f2c48e3591d763896259dfc238c130572ae7a7d67a8774feeabbe80997",
+          "Fingerprint": "sha256:20a8121dc5477b4da391cacb42ad06d59dcabe370bd9396aa7e6380f99900d78",
           "Title": "minimatch: Minimatch: Denial of Service via catastrophic backtracking in glob expressions",
           "Description": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Prior to version 10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, and 3.1.4, nested `*()` extglobs produce regexps with nested unbounded quantifiers (e.g. `(?:(?:a|b)*)*`), which exhibit catastrophic backtracking in V8. With a 12-byte pattern `*(*(*(a|b)))` and an 18-byte non-matching input, `minimatch()` stalls for over 7 seconds. Adding a single nesting level or a few input characters pushes this to minutes. This is the most severe finding: it is triggered by the default `minimatch()` API with no special options, and the minimum viable pattern is only 12 bytes. The same issue affects `+()` extglobs equally. Versions 10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, and 3.1.4 fix the issue.",
           "Severity": "HIGH",
@@ -30618,7 +30624,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:ae31df38d7d938f183cb5e3bc5d0963fc1b42ff1a459d964b884af40f9662a46",
+          "Fingerprint": "sha256:04e9ec07bfe51ef3c1646f9801dbae16516ed547cfea07da0cf08c62cc335d4c",
           "Title": "nodejs-nth-check: inefficient regular expression complexity",
           "Description": "nth-check is vulnerable to Inefficient Regular Expression Complexity",
           "Severity": "HIGH",
@@ -30689,7 +30695,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:21c1cea2d64cc99d176b36f7e8520c712b3a2f0647341deebe0c6a9c76655371",
+          "Fingerprint": "sha256:ca930b094c2136daa5bb3690a55aa3e04de4d983240efa2478ca7e2f25026df8",
           "Title": "PostCSS: Improper input validation in PostCSS",
           "Description": "An issue was discovered in PostCSS before 8.4.31. The vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being included in a comment.",
           "Severity": "MEDIUM",
@@ -30755,7 +30761,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:9daef39757a88d93fc9a64e80a53674e7687df4aace092b09e1ea7ec33868550",
+          "Fingerprint": "sha256:4f84202e7a09b45d84bdbd0cb73d6c5d860edf8b0e8054bc38b91419c2a9ef03",
           "Title": "postcss: PostCSS: Cross-Site Scripting (XSS) via improper escaping of style closing tags",
           "Description": "PostCSS takes a CSS file and provides an API to analyze and modify its rules by transforming the rules into an Abstract Syntax Tree. Versions prior to 8.5.10 do not escape `\u003c/style\u003e` sequences when stringifying CSS ASTs. When user-submitted CSS is parsed and re-stringified for embedding in HTML `\u003cstyle\u003e` tags, `\u003c/style\u003e` in CSS values breaks out of the style context, enabling XSS. Version 8.5.10 fixes the issue.",
           "Severity": "MEDIUM",
@@ -30810,7 +30816,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:bd5ee236064eb451b268743ed2636a8c4e50bf6c68ec492a5c37d43192796804",
+          "Fingerprint": "sha256:1bca60b09d4575dcf15fd54c694b21fa8802597801a015eeb1ec870147f8973a",
           "Title": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
           "Description": "### Impact\n\nThe serialize-javascript npm package (versions \u003c= 7.0.2) contains a code injection vulnerability. It is an incomplete fix for CVE-2020-7660.\n\nWhile `RegExp.source` is sanitized, `RegExp.flags` is interpolated directly into the generated output without escaping. A similar issue exists in `Date.prototype.toISOString()`.\n\nIf an attacker can control the input object passed to `serialize()`, they can inject malicious JavaScript via the flags property of a RegExp object. When the serialized string is later evaluated (via `eval`, `new Function`, or `\u003cscript\u003e` tags), the injected code executes.\n\n```javascript\nconst serialize = require('serialize-javascript');\n// Create an object that passes instanceof RegExp with a spoofed .flags\nconst fakeRegex = Object.create(RegExp.prototype);\nObject.defineProperty(fakeRegex, 'source', { get: () =\u003e 'x' });\nObject.defineProperty(fakeRegex, 'flags', {\n  get: () =\u003e '\"+(global.PWNED=\"CODE_INJECTION_VIA_FLAGS\")+\"'\n});\nfakeRegex.toJSON = function() { return '@placeholder'; };\nconst output = serialize({ re: fakeRegex });\n// Output: {\"re\":new RegExp(\"x\", \"\"+(global.PWNED=\"CODE_INJECTION_VIA_FLAGS\")+\"\")}\nlet obj;\neval('obj = ' + output);\nconsole.log(global.PWNED); // \"CODE_INJECTION_VIA_FLAGS\" — injected code executed!\n#h2. PoC 2: Code Injection via Date.toISOString()\n```\n\n```javascript\nconst serialize = require('serialize-javascript');\nconst fakeDate = Object.create(Date.prototype);\nfakeDate.toISOString = function() { return '\"+(global.DATE_PWNED=\"DATE_INJECTION\")+\"'; };\nfakeDate.toJSON = function() { return '2024-01-01'; };\nconst output = serialize({ d: fakeDate });\n// Output: {\"d\":new Date(\"\"+(global.DATE_PWNED=\"DATE_INJECTION\")+\"\")}\neval('obj = ' + output);\nconsole.log(global.DATE_PWNED); // \"DATE_INJECTION\" — injected code executed!\n#h2. PoC 3: Remote Code Execution\n```\n\n```javascript\nconst serialize = require('serialize-javascript');\nconst rceRegex = Object.create(RegExp.prototype);\nObject.defineProperty(rceRegex, 'source', { get: () =\u003e 'x' });\nObject.defineProperty(rceRegex, 'flags', {\n  get: () =\u003e '\"+require(\"child_process\").execSync(\"id\").toString()+\"'\n});\nrceRegex.toJSON = function() { return '@rce'; };\nconst output = serialize({ re: rceRegex });\n// Output: {\"re\":new RegExp(\"x\", \"\"+require(\"child_process\").execSync(\"id\").toString()+\"\")}\n// When eval'd on a Node.js server, executes the \"id\" system command\n```\n\n### Patches\n\nThe fix has been published in version 7.0.3. https://github.com/yahoo/serialize-javascript/releases/tag/v7.0.3",
           "Severity": "HIGH",
@@ -30860,7 +30866,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:2353c0230e9cd59b03c3fb2fba3676bc5b0c5fff5f4d9a9ea89e83084d050c65",
+          "Fingerprint": "sha256:a6595bad138495a9503adad1edb74043b8ae52804491b6b74771e0328bb5cc39",
           "Title": "serialize-javascript: serialize-javascript: Denial of Service via specially crafted array-like object serialization",
           "Description": "Serialize JavaScript to a superset of JSON that includes regular expressions and functions. Prior to version 7.0.5, there is a Denial of Service (DoS) vulnerability caused by CPU exhaustion. When serializing a specially crafted \"array-like\" object (an object that inherits from Array.prototype but has a very large length property), the process enters an intensive loop that consumes 100% CPU and hangs indefinitely. This issue has been patched in version 7.0.5.",
           "Severity": "MEDIUM",
@@ -30922,7 +30928,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:02c99619a196bb8baf5454a8e3ded9d939ffd1e924ad46d4410e492c64461723",
+          "Fingerprint": "sha256:18dace4690590dd3889d806c7ef98c708660f2fd33fd196f837cd84a17eae88d",
           "Title": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
           "Description": "### Impact\n\nThe serialize-javascript npm package (versions \u003c= 7.0.2) contains a code injection vulnerability. It is an incomplete fix for CVE-2020-7660.\n\nWhile `RegExp.source` is sanitized, `RegExp.flags` is interpolated directly into the generated output without escaping. A similar issue exists in `Date.prototype.toISOString()`.\n\nIf an attacker can control the input object passed to `serialize()`, they can inject malicious JavaScript via the flags property of a RegExp object. When the serialized string is later evaluated (via `eval`, `new Function`, or `\u003cscript\u003e` tags), the injected code executes.\n\n```javascript\nconst serialize = require('serialize-javascript');\n// Create an object that passes instanceof RegExp with a spoofed .flags\nconst fakeRegex = Object.create(RegExp.prototype);\nObject.defineProperty(fakeRegex, 'source', { get: () =\u003e 'x' });\nObject.defineProperty(fakeRegex, 'flags', {\n  get: () =\u003e '\"+(global.PWNED=\"CODE_INJECTION_VIA_FLAGS\")+\"'\n});\nfakeRegex.toJSON = function() { return '@placeholder'; };\nconst output = serialize({ re: fakeRegex });\n// Output: {\"re\":new RegExp(\"x\", \"\"+(global.PWNED=\"CODE_INJECTION_VIA_FLAGS\")+\"\")}\nlet obj;\neval('obj = ' + output);\nconsole.log(global.PWNED); // \"CODE_INJECTION_VIA_FLAGS\" — injected code executed!\n#h2. PoC 2: Code Injection via Date.toISOString()\n```\n\n```javascript\nconst serialize = require('serialize-javascript');\nconst fakeDate = Object.create(Date.prototype);\nfakeDate.toISOString = function() { return '\"+(global.DATE_PWNED=\"DATE_INJECTION\")+\"'; };\nfakeDate.toJSON = function() { return '2024-01-01'; };\nconst output = serialize({ d: fakeDate });\n// Output: {\"d\":new Date(\"\"+(global.DATE_PWNED=\"DATE_INJECTION\")+\"\")}\neval('obj = ' + output);\nconsole.log(global.DATE_PWNED); // \"DATE_INJECTION\" — injected code executed!\n#h2. PoC 3: Remote Code Execution\n```\n\n```javascript\nconst serialize = require('serialize-javascript');\nconst rceRegex = Object.create(RegExp.prototype);\nObject.defineProperty(rceRegex, 'source', { get: () =\u003e 'x' });\nObject.defineProperty(rceRegex, 'flags', {\n  get: () =\u003e '\"+require(\"child_process\").execSync(\"id\").toString()+\"'\n});\nrceRegex.toJSON = function() { return '@rce'; };\nconst output = serialize({ re: rceRegex });\n// Output: {\"re\":new RegExp(\"x\", \"\"+require(\"child_process\").execSync(\"id\").toString()+\"\")}\n// When eval'd on a Node.js server, executes the \"id\" system command\n```\n\n### Patches\n\nThe fix has been published in version 7.0.3. https://github.com/yahoo/serialize-javascript/releases/tag/v7.0.3",
           "Severity": "HIGH",
@@ -30972,7 +30978,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:1291c70a8d0ce761722fc481e631c033da995cf1b22afab6d0001bcfe08cb124",
+          "Fingerprint": "sha256:8e2bf4c63fe20292d506630c91cfa604c1f3cfb4673bb308b21bf08d347defb4",
           "Title": "serialize-javascript: serialize-javascript: Denial of Service via specially crafted array-like object serialization",
           "Description": "Serialize JavaScript to a superset of JSON that includes regular expressions and functions. Prior to version 7.0.5, there is a Denial of Service (DoS) vulnerability caused by CPU exhaustion. When serializing a specially crafted \"array-like\" object (an object that inherits from Array.prototype but has a very large length property), the process enters an intensive loop that consumes 100% CPU and hangs indefinitely. This issue has been patched in version 7.0.5.",
           "Severity": "MEDIUM",
@@ -31037,7 +31043,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:15b4b0b19764af1aeeb9581466ca7096a1cf45a0da0f9b2babf1ab26348ed4ce",
+          "Fingerprint": "sha256:2eb09ae33d4afec92435393ce040e90fd4fa8a85351a7a99604b0e4931ae1296",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
           "Description": "node-tar is a Tar for Node.js. The node-tar library (\u003c= 7.5.2) fails to sanitize the linkpath of Link (hardlink) and SymbolicLink entries when preservePaths is false (the default secure behavior). This allows malicious archives to bypass the extraction root restriction, leading to Arbitrary File Overwrite via hardlinks and Symlink Poisoning via absolute symlink targets. This vulnerability is fixed in 7.5.3.",
           "Severity": "HIGH",
@@ -31101,7 +31107,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:27e6995f589fd996e614d5a5f3dabf1e8ca1f5f918fa5b99f33a98518d4e6e6f",
+          "Fingerprint": "sha256:5681739c42cd89d896707eb63a9dd61c799de47bd656c65d2b3a090c39ad989f",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
           "Description": "node-tar,a Tar for Node.js, has a race condition vulnerability in versions up to and including 7.5.3. This is due to an incomplete handling of Unicode path collisions in the `path-reservations` system. On case-insensitive or normalization-insensitive filesystems (such as macOS APFS, In which it has been tested), the library fails to lock colliding paths (e.g., `ß` and `ss`), allowing them to be processed in parallel. This bypasses the library's internal concurrency safeguards and permits Symlink Poisoning attacks via race conditions. The library uses a `PathReservations` system to ensure that metadata checks and file operations for the same path are serialized. This prevents race conditions where one entry might clobber another concurrently. This is a Race Condition which enables Arbitrary File Overwrite. This vulnerability affects users and systems using node-tar on macOS (APFS/HFS+). Because of using `NFD` Unicode normalization (in which `ß` and `ss` are different), conflicting paths do not have their order properly preserved under filesystems that ignore Unicode normalization (e.g., APFS (in which `ß` causes an inode collision with `ss`)). This enables an attacker to circumvent internal parallelization locks (`PathReservations`) using conflicting filenames within a malicious tar archive. The patch in version 7.5.4 updates `path-reservations.js` to use a normalization form that matches the target filesystem's behavior (e.g., `NFKD`), followed by first `toLocaleLowerCase('en')` and then `toLocaleUpperCase('en')`. As a workaround, users who cannot upgrade promptly, and who are programmatically using `node-tar` to extract arbitrary tarball data should filter out all `SymbolicLink` entries (as npm does) to defend against arbitrary file writes via this file system entry name collision issue.",
           "Severity": "HIGH",
@@ -31167,7 +31173,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:149fcee03f9a43d611cce62793366c654e898a1ec077083114341b0d7c781d65",
+          "Fingerprint": "sha256:9749ace857f12e88862ed73caa42114d38b986b8b98168cde112c78fe0bbc653",
           "Title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
           "Description": "node-tar,a Tar for Node.js, contains a vulnerability in versions prior to 7.5.7 where the security check for hardlink entries uses different path resolution semantics than the actual hardlink creation logic. This mismatch allows an attacker to craft a malicious TAR archive that bypasses path traversal protections and creates hardlinks to arbitrary files outside the extraction directory. Version 7.5.7 contains a fix for the issue.",
           "Severity": "HIGH",
@@ -31227,7 +31233,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:8b3568446fdee4f21c68211713c50bae894619723b48230f23371fbfc4fe4549",
+          "Fingerprint": "sha256:2c9b87da9fdfe52170a4230ea6f6a4318e1427126d574a0808f9c83ee5626c36",
           "Title": "node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
           "Description": "node-tar is a full-featured Tar for Node.js. When using default options in versions 7.5.7 and below, an attacker-controlled archive can create a hardlink inside the extraction directory that points to a file outside the extraction root, enabling arbitrary file read and write as the extracting user. Severity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive. This issue has been fixed in version 7.5.8.",
           "Severity": "HIGH",
@@ -31292,7 +31298,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:bc50a50d4a467cd837aab962a0a3d39e34cd6a8897c5e3016003875f6429809a",
+          "Fingerprint": "sha256:9b1875f1e7b8406bdaacab703e47dd45dc7db07a6d1cf63e3e9ad0cb04d6eec8",
           "Title": "node-tar: hardlink path traversal via drive-relative linkpath",
           "Description": "node-tar is a full-featured Tar for Node.js. Prior to version 7.5.10, tar can be tricked into creating a hardlink that points outside the extraction directory by using a drive-relative link target such as C:../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This issue has been patched in version 7.5.10.",
           "Severity": "HIGH",
@@ -31357,7 +31363,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:7ea6938732c71b76c058a5bd431829b2aff9974eef6b8f783149409350a68dbe",
+          "Fingerprint": "sha256:a08aec4c82eb4e0bb34768ffaba0e80de45703eb909ea21a925b97584d889f85",
           "Title": "tar: tar: File overwrite via drive-relative symlink traversal",
           "Description": "node-tar is a full-featured Tar for Node.js. Prior to version 7.5.11, tar (npm) can be tricked into creating a symlink that points outside the extraction directory by using a drive-relative symlink target such as C:../../../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This vulnerability is fixed in 7.5.11.",
           "Severity": "HIGH",
@@ -31420,7 +31426,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:90a226647d8c54e063c719ee0a52a33c10b4c9365f20e59b70962ed12b04566d",
+          "Fingerprint": "sha256:1dbeba54488d98334fe7abed041a30fe43f680bd4e00dad61d39a967cf307fed",
           "Title": "Underscore.js: Underscore.js: Denial of Service via recursive data structures in flatten and isEqual functions",
           "Description": "Underscore.js is a utility-belt library for JavaScript. Prior to 1.13.8, the _.flatten and _.isEqual functions use recursion without a depth limit. Under very specific conditions, detailed below, an attacker could exploit this in a Denial of Service (DoS) attack by triggering a stack overflow. Untrusted input must be used to create a recursive datastructure, for example using JSON.parse, with no enforced depth limit. The datastructure thus created must be passed to _.flatten or _.isEqual. In the case of _.flatten, the vulnerability can only be exploited if it is possible for a remote client to prepare a datastructure that consists of arrays at all levels AND if no finite depth limit is passed as the second argument to _.flatten. In the case of _.isEqual, the vulnerability can only be exploited if there exists a code path in which two distinct datastructures that were submitted by the same remote client are compared using _.isEqual. For example, if a client submits data that are stored in a database, and the same client can later submit another datastructure that is then compared to the data that were saved in the database previously, OR if a client submits a single request, but its data are parsed twice, creating two non-identical but equivalent datastructures that are then compared. Exceptions originating from the call to _.flatten or _.isEqual, as a result of a stack overflow, are not being caught. This vulnerability is fixed in 1.13.8.",
           "Severity": "HIGH",
@@ -31490,7 +31496,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:00a092b6749d0bb5da1e441e8ce1dde6df4b3f2b1e56101bf72632b29213bd65",
+          "Fingerprint": "sha256:dfb25cb34ea20cac6e7973a537979ee489fc61872dbe8f738ab41911b2838685",
           "Title": "webpack-dev-server: webpack-dev-server information exposure",
           "Description": "webpack-dev-server allows users to use webpack with a development server that provides live reloading. Prior to version 5.2.1, webpack-dev-server users' source code may be stolen when they access a malicious web site. Because the request for classic script by a script tag is not subject to same origin policy, an attacker can inject a malicious script in their site and run the script. Note that the attacker has to know the port and the output entrypoint script path. Combined with prototype pollution, the attacker can get a reference to the webpack runtime variables. By using `Function::toString` against the values in `__webpack_modules__`, the attacker can get the source code. Version 5.2.1 contains a patch for the issue.",
           "Severity": "MEDIUM",
@@ -31554,7 +31560,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:a60ca08e3b2d8839c89d00026dcf1e28ee7a1d2b2edfdc55e99e152c9f76296b",
+          "Fingerprint": "sha256:674d7835b7f50db618f6244889e1849457cb269f14a8205b5a5adb0f7c258d8b",
           "Title": "webpack-dev-server: webpack-dev-server information exposure",
           "Description": "webpack-dev-server allows users to use webpack with a development server that provides live reloading. Prior to version 5.2.1, webpack-dev-server users' source code may be stolen when you access a malicious web site with non-Chromium based browser. The `Origin` header is checked to prevent Cross-site WebSocket hijacking from happening, which was reported by CVE-2018-14732. But webpack-dev-server always allows IP address `Origin` headers. This allows websites that are served on IP addresses to connect WebSocket. An attacker can obtain source code via a method similar to that used to exploit CVE-2018-14732. Version 5.2.1 contains a patch for the issue.",
           "Severity": "MEDIUM",

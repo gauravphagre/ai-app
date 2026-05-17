@@ -57,6 +57,18 @@ services:
     networks:
       - ai-net
 
+  tempo:
+    image: grafana/tempo:latest
+    container_name: tempo
+    command: [ "-config.file=/etc/tempo.yaml" ]
+    volumes:
+      - ./tempo.yaml:/etc/tempo.yaml
+    ports:
+      - "3200:3200"
+    restart: unless-stopped
+    networks:
+      - ai-net
+
 volumes:
   grafana-data:
   prometheus-data:

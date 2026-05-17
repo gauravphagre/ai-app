@@ -3,23 +3,23 @@
   "Trivy": {
     "Version": "0.70.0"
   },
-  "ReportID": "019e1a4b-6e8f-703b-8c72-0218205993cf",
-  "CreatedAt": "2026-05-12T03:46:51.663017673Z",
-  "ArtifactID": "sha256:9ac9bb2b262d1b2b507e8c7be1937121514ab26643fee4ca295ac74201c0a037",
+  "ReportID": "019e3461-df5a-7817-a839-8672abe092ee",
+  "CreatedAt": "2026-05-17T05:21:29.946532639Z",
+  "ArtifactID": "sha256:697db419137431948c39e2adf14637d6733cdee0e88710926e5449cd6b47e01f",
   "ArtifactName": "ai-ollama",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 6553371136,
+    "Size": 6553911808,
     "OS": {
       "Family": "ubuntu",
       "Name": "24.04"
     },
-    "ImageID": "sha256:ae21e5725d2d5157850d6e098753a5f793a57acc784588022dba2253fefd7608",
+    "ImageID": "sha256:4a5e1d00f854a710ceeaa471346180f1d10e8530a104bc48214ca81fa63230d3",
     "DiffIDs": [
       "sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475",
       "sha256:f236f023d34765b9550f4dfdb364a181bc066643ae85d3120607ac1a247de226",
-      "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c",
-      "sha256:9f3f891caa0815fc074c4e472ef728dc068e59ff66c256bd98fd9b2881c9fedd",
+      "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9",
+      "sha256:88a1ac6677474e4b78818aa06a01e59256216b3ee6bcf7fb3a0c63a5701d2779",
       "sha256:d44c1450dc0c679dd958041be245a01854d63f631fb75b82a677b7dc96d92c97",
       "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
     ],
@@ -27,12 +27,12 @@
       "ai-ollama:latest"
     ],
     "RepoDigests": [
-      "ai-ollama@sha256:ae21e5725d2d5157850d6e098753a5f793a57acc784588022dba2253fefd7608"
+      "ai-ollama@sha256:4a5e1d00f854a710ceeaa471346180f1d10e8530a104bc48214ca81fa63230d3"
     ],
     "Reference": "ai-ollama:latest",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-05-08T15:52:43.566640528Z",
+      "created": "2026-05-13T06:18:45.143465141Z",
       "history": [
         {
           "created": "2026-04-10T06:49:15Z",
@@ -70,75 +70,75 @@
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-05-07T22:55:25Z",
+          "created": "2026-05-12T23:42:32Z",
           "created_by": "COPY /bin /usr/bin # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-05-07T22:55:25Z",
+          "created": "2026-05-12T23:42:32Z",
           "created_by": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "COPY /lib/ollama /usr/lib/ollama # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "ENV NVIDIA_VISIBLE_DEVICES=all",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "ENV OLLAMA_HOST=0.0.0.0:11434",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "EXPOSE [11434/tcp]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "ENTRYPOINT [\"/bin/ollama\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-07T22:55:31Z",
+          "created": "2026-05-12T23:42:38Z",
           "created_by": "CMD [\"serve\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-05-08T15:52:43Z",
+          "created": "2026-05-13T06:18:44Z",
           "created_by": "COPY start.sh /start.sh # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-05-08T15:52:43Z",
+          "created": "2026-05-13T06:18:45Z",
           "created_by": "RUN /bin/sh -c chmod +x /start.sh # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-05-08T15:52:43Z",
+          "created": "2026-05-13T06:18:45Z",
           "created_by": "ENTRYPOINT [\"/start.sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -150,8 +150,8 @@
         "diff_ids": [
           "sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475",
           "sha256:f236f023d34765b9550f4dfdb364a181bc066643ae85d3120607ac1a247de226",
-          "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c",
-          "sha256:9f3f891caa0815fc074c4e472ef728dc068e59ff66c256bd98fd9b2881c9fedd",
+          "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9",
+          "sha256:88a1ac6677474e4b78818aa06a01e59256216b3ee6bcf7fb3a0c63a5701d2779",
           "sha256:d44c1450dc0c679dd958041be245a01854d63f631fb75b82a677b7dc96d92c97",
           "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
         ]
@@ -191,14 +191,14 @@
         "DiffID": "sha256:f236f023d34765b9550f4dfdb364a181bc066643ae85d3120607ac1a247de226"
       },
       {
-        "Size": 44803072,
-        "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-        "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+        "Size": 44848128,
+        "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+        "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
       },
       {
-        "Size": 6090164736,
-        "Digest": "sha256:5e01b903946c3181db40fddd7b80d68b439f079aba29cc11ed719b178e4b21c2",
-        "DiffID": "sha256:9f3f891caa0815fc074c4e472ef728dc068e59ff66c256bd98fd9b2881c9fedd"
+        "Size": 6090660352,
+        "Digest": "sha256:17a564a5a82298baa16e2fbcd7d63cb4be732cc01c10278a25aae1abf0b02f0d",
+        "DiffID": "sha256:88a1ac6677474e4b78818aa06a01e59256216b3ee6bcf7fb3a0c63a5701d2779"
       },
       {
         "Size": 2048,
@@ -8694,7 +8694,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:e01090a9e8779c17b4400400b77f6a286c8d340d096512b8debf55d2c986107d",
+          "Fingerprint": "sha256:825a536fbbdb4201ea6aaedb7a0fd68c454a1d74bca0d1dd8116ccdced7909ef",
           "Title": "util-linux: TOCTOU in the mount program when setting up loop devices",
           "Description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.",
           "Severity": "MEDIUM",
@@ -8752,7 +8752,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:10c54d663e7042d503ea7ec0e77d69dc700679fbb6f1149293b3bc1886da5150",
+          "Fingerprint": "sha256:342704d843da79d74bd7c09726876a1f74f9f454776d15d67b0cf7b1e87b8e87",
           "Title": "It was discovered that dpkg-deb (a component of dpkg, the Debian packa ...",
           "Description": "It was discovered that dpkg-deb (a component of dpkg, the Debian package management system) does not properly validate the end of the data stream when uncompressing a zstd-compressed .deb archive, which may result in denial of service (infinite loop spinning the CPU).",
           "Severity": "MEDIUM",
@@ -8792,7 +8792,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:b2f6c8554a1a88a0c35023c9abb649fdc7ca315fcb5056829ff9333061c5e44d",
+          "Fingerprint": "sha256:3a7794e4c0ef144620fc36059602d42a863e753ba56f375b023792754b68ceda",
           "Title": "util-linux: TOCTOU in the mount program when setting up loop devices",
           "Description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.",
           "Severity": "MEDIUM",
@@ -8849,7 +8849,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:aadde3a3b335836ce266da5c8e7961be2e287c677db4164ccac6ec884008e638",
+          "Fingerprint": "sha256:35ff7a5cd882abc27b7da60672239cc39616043cc3bbdca249e279f547ed7cc2",
           "Title": "glibc: glibc: Denial of Service via iconv() function with specific character sets",
           "Description": "The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.\n\n\n\nThis vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them.",
           "Severity": "MEDIUM",
@@ -8902,7 +8902,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:ea5b53b5f637f6e2bccbe37e90274dda42b54f90a9488194904aa416d27da953",
+          "Fingerprint": "sha256:61108bbe39d280c52ca04f6684754e71fcee6be4cc8e9ec33fbca305d53a27b5",
           "Title": "glibc: glibc: Incorrect DNS response parsing via crafted DNS server response",
           "Description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer.",
           "Severity": "MEDIUM",
@@ -8911,7 +8911,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
-            "photon": 2,
+            "photon": 3,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -8952,7 +8952,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:530ad9c7670c1b9dce0220cbade76bfbb637fe6a260e8f50db3be98a71485431",
+          "Fingerprint": "sha256:dd96205e443e368be00bf9b707b69c43662f4f23d065cf74307b8a54436127ac",
           "Title": "glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions",
           "Description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification.",
           "Severity": "MEDIUM",
@@ -8962,7 +8962,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
-            "photon": 4,
+            "photon": 2,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -9003,7 +9003,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:e5ac9ce1fcc455e92edda5359c3c0cddd969d86d96e6d2008301608245f6c75b",
+          "Fingerprint": "sha256:d096acd1810cbfe4a14269f6ab55c225ca8f7dabcf03665229f588ac63f5f470",
           "Title": "glibc: glibc: Denial of Service via iconv() function with specific character sets",
           "Description": "The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.\n\n\n\nThis vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them.",
           "Severity": "MEDIUM",
@@ -9056,7 +9056,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:2cea1386f5d78cdf3fac9d8fc9351bd22c88b08d1bb0e83de23af23853de254e",
+          "Fingerprint": "sha256:9a7bcf845d1b9744d45391653e32c65d7155a85e25cf5b071a1584f7574e7451",
           "Title": "glibc: glibc: Incorrect DNS response parsing via crafted DNS server response",
           "Description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer.",
           "Severity": "MEDIUM",
@@ -9065,7 +9065,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
-            "photon": 2,
+            "photon": 3,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -9106,7 +9106,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:04343842b04843e8418655780ffeba9b083765473f60598dc64dab71c7aad913",
+          "Fingerprint": "sha256:8fcfe62318d88e7fb1120c9d811cb4ccb269dc1741bca2aed88bdd5ba6c3d90b",
           "Title": "glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions",
           "Description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification.",
           "Severity": "MEDIUM",
@@ -9116,7 +9116,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
-            "photon": 4,
+            "photon": 2,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -9158,7 +9158,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:37d478b97055de5e342388ad80e4b334b7dbe4b332143d5e385bf91fec011616",
+          "Fingerprint": "sha256:27174451973243170f081dee2869a55f78a196efa3045c4d222b7645b102dec7",
           "Title": "libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file()",
           "Description": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege escalation.",
           "Severity": "MEDIUM",
@@ -9235,7 +9235,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:959e8ddd7c16518d4a3cd060f2851a62c76bb3ec9cf9cd5895a3f12b812e5aa2",
+          "Fingerprint": "sha256:6cd51831f3554e432e8eaedd359d1b1a92afa7877ffdec937c8eefb76a00ca64",
           "Title": "elfutils: GNU elfutils eu-readelf libdw_alloc.c __libdw_thread_tail memory corruption",
           "Description": "A vulnerability has been found in GNU elfutils 0.192 and classified as critical. This vulnerability affects the function __libdw_thread_tail in the library libdw_alloc.c of the component eu-readelf. The manipulation of the argument w leads to memory corruption. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The name of the patch is 2636426a091bd6c6f7f02e49ab20d4cdc6bfc753. It is recommended to apply a patch to fix this issue.",
           "Severity": "LOW",
@@ -9296,7 +9296,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:c89e426acc342079b55b1b5f86665b4e60e5f15818b2ba9fe6ea2de8e21286ab",
+          "Fingerprint": "sha256:a06df220eb326af1d8624dc199c35250a52d744efd3f83165b80e65d69d1ad31",
           "Title": "elfutils: GNU elfutils eu-strip elf_strptr.c elf_strptr denial of service",
           "Description": "A vulnerability classified as problematic was found in GNU elfutils 0.192. This vulnerability affects the function elf_strptr in the library /libelf/elf_strptr.c of the component eu-strip. The manipulation leads to denial of service. It is possible to launch the attack on the local host. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The name of the patch is b16f441cca0a4841050e3215a9f120a6d8aea918. It is recommended to apply a patch to fix this issue.",
           "Severity": "LOW",
@@ -9356,7 +9356,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:4b129318009729ac14bf4a625dccc92b12e00c0cec9e5039e8f829e9ed6012d1",
+          "Fingerprint": "sha256:3f16e88e89f2eaf83aadbbecf72b9f2976549bca95d661280c1c63e9b128ab02",
           "Title": "libexpat: libexpat: Denial of service via crafted file processing",
           "Description": "In libexpat through 2.7.3, a crafted file with an approximate size of 2 MiB can lead to dozens of seconds of processing time.",
           "Severity": "MEDIUM",
@@ -9381,12 +9381,13 @@
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/12/02/1",
             "https://access.redhat.com/security/cve/CVE-2025-66382",
+            "https://cert-portal.siemens.com/productcert/html/ssa-082556.html",
             "https://github.com/libexpat/libexpat/issues/1076",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-66382",
             "https://www.cve.org/CVERecord?id=CVE-2025-66382"
           ],
           "PublishedDate": "2025-11-28T07:15:57.9Z",
-          "LastModifiedDate": "2025-12-19T16:05:03.557Z"
+          "LastModifiedDate": "2026-05-12T13:17:23.933Z"
         },
         {
           "VulnerabilityID": "CVE-2024-2236",
@@ -9409,7 +9410,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:85bac4161d24d808e1c33b0cd12a4316c5f65208ffeb5a9e7151d1a37ca397ba",
+          "Fingerprint": "sha256:b2ed1627f4a7ac8144da3017d629f3b0b0c2b65b833d1919eafbd6b1887b2602",
           "Title": "libgcrypt: vulnerable to Marvin Attack",
           "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
           "Severity": "LOW",
@@ -9474,7 +9475,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:6731356371b19325716dfac8d762a61751a438686e369739f561f178f310a634",
+          "Fingerprint": "sha256:1b28fdc5a9a6c7a167e52c982a8320a4ff870d6720c3aa027a8baef0d1a42411",
           "Title": "icu: Stack buffer overflow in the SRBRoot::addTag function",
           "Description": "A stack buffer overflow was found in Internationl components for unicode (ICU ). While running the genrb binary, the 'subtag' struct overflowed at the SRBRoot::addTag function. This issue may lead to memory corruption and local arbitrary code execution.",
           "Severity": "LOW",
@@ -9541,7 +9542,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:dc0cc9ae7b8ebd6ade2d734d0229d0371480b5298b58e32de8939c7a579e6c07",
+          "Fingerprint": "sha256:1abff8862fc827f67132a435b822ea345901f4ffc5ab5132379985c9011537d5",
           "Title": "util-linux: TOCTOU in the mount program when setting up loop devices",
           "Description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.",
           "Severity": "MEDIUM",
@@ -9598,7 +9599,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:8d7c7e3d243bb85d39e98627238e3bbf4500694b206f8b28e5c7ad68cdc3160f",
+          "Fingerprint": "sha256:17e786b21d7e568f552a80f48d6a65f8d0d54a23e81a0a04efbef81980b9ee65",
           "Title": "util-linux: TOCTOU in the mount program when setting up loop devices",
           "Description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.",
           "Severity": "MEDIUM",
@@ -9655,7 +9656,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:f3f9e838589f5bf941dabcc432b8396e13efeac5c8d6f2b49b83d8bf2ae18356",
+          "Fingerprint": "sha256:108b3a023654db8e53065f96485f6559b1f2b36f2bd748bbbb9cb320409f54ae",
           "Title": "util-linux: TOCTOU in the mount program when setting up loop devices",
           "Description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.",
           "Severity": "MEDIUM",
@@ -9712,7 +9713,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:417a182ab11c8eaaeafc5f6d11904ae9f89cf5f56db0115f21dee7b1733a2744",
+          "Fingerprint": "sha256:b642d0c079cfe70d0c12e52d4973baa12aabc7afb1615e6f848904a2a7da09f8",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -9773,7 +9774,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:501420262378a452ab338c2d146d1efd06a63126ac1e7d3e9a06d7fc8073acb5",
+          "Fingerprint": "sha256:ede5f56b2187e56e72b8ed0a8468a9071a48f2195a268093dd2c5bdea9a86621",
           "Title": "util-linux: TOCTOU in the mount program when setting up loop devices",
           "Description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.",
           "Severity": "MEDIUM",
@@ -9830,7 +9831,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:befa1dbf6c5502e1ae54ee54ac2008d33b49e04f2b7eeeee897adb7c502d307b",
+          "Fingerprint": "sha256:d05c951851dcc98216201ea6d1ee6a20392152dbfe06a848fba7d796537fd34f",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -9892,7 +9893,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:5cfead5df5c4c9085be9d123319f7960281ca5b3a3d0d761cdeee9623bcc2b12",
+          "Fingerprint": "sha256:ae4d639860e58cbad03ad08c7d394650e009ee21865ff740e9764285ee81e143",
           "Title": "When sed is invoked with both -i (in-place edit) and --follow-symlinks ...",
           "Description": "When sed is invoked with both -i (in-place edit) and --follow-symlinks, the function open_next_file() performs two separate, non-atomic filesystem operations on the same path: \n1. resolves symlink to its target and stores the resolved path for determining when output is written,\n2. opens the original symlink path (not the resolved one) to read the file. \nBetween these two calls there is a race window. If an attacker atomically replaces the symlink with a different target during that window, sed will: read content from the new (attacker-chosen) symlink target and write the processed result to the path recorded in step 1. This can lead to arbitrary file overwrite with attacker-controlled content in the context of the sed process.\n\n\nThis issue was fixed in version 4.10.",
           "Severity": "MEDIUM",
@@ -9911,6 +9912,7 @@
             }
           },
           "References": [
+            "http://www.openwall.com/lists/oss-security/2026/05/13/1",
             "https://cert.pl/en/posts/2026/04/CVE-2026-5958",
             "https://github.com/advisories/GHSA-9r7w-j29g-xqx8",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-5958",
@@ -9920,7 +9922,7 @@
             "https://www.gnu.org/software/sed/"
           ],
           "PublishedDate": "2026-04-20T12:16:08.433Z",
-          "LastModifiedDate": "2026-04-20T19:05:30.75Z"
+          "LastModifiedDate": "2026-05-13T06:16:14.78Z"
         },
         {
           "VulnerabilityID": "CVE-2025-45582",
@@ -9943,7 +9945,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:006d8a6d96570738e66275466a121ca944092e62b820bac31c3a58ec3c2bf40e",
+          "Fingerprint": "sha256:3113f52c3334a0c0af99224980237216592fb26c65506d022479e42e3f80bba2",
           "Title": "tar: Tar path traversal",
           "Description": "GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file's name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of \"Member name contains '..'\" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain \"x -\u003e ../../../../../home/victim/.ssh\" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which \"tar xf\" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each \"tar xf\" in its Security Rules of Thumb; however, third-party advice leads users to run \"tar xf\" more than once into the same directory.",
           "Severity": "MEDIUM",
@@ -10007,7 +10009,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:b4902a549b911e5c1851dbb94cfd0b6cf75f74dc9009146351dcafb03065d56f",
+          "Fingerprint": "sha256:fa856fa1f300b1bcef542e4e967344dc294b688d2097050eac0eb3e0ba436b20",
           "Title": "tar: tar: Hidden file injection via crafted archives",
           "Description": "A flaw was found in tar. A remote attacker could exploit this vulnerability by crafting a malicious archive, leading to hidden file injection with fully attacker-controlled content. This bypasses pre-extraction inspection mechanisms, potentially allowing an attacker to introduce malicious files onto a system without detection.",
           "Severity": "MEDIUM",
@@ -10062,7 +10064,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:c5277de961fcbb8daf8adb223be31e416c6b38021f8e20c9816f536c5b130d52",
+          "Fingerprint": "sha256:35b85a18589053f007da3c8106b6a639df952c93f62613643d68aa0ac467218e",
           "Title": "util-linux: TOCTOU in the mount program when setting up loop devices",
           "Description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.",
           "Severity": "MEDIUM",
@@ -10185,8 +10187,8 @@
             "stdlib@v1.26.0"
           ],
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10200,8 +10202,8 @@
           "Version": "v1.26.0",
           "Relationship": "direct",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10214,8 +10216,8 @@
           },
           "Version": "v1.1.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10228,8 +10230,8 @@
           },
           "Version": "v0.0.0-20211112161151-bc219186db40",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10242,8 +10244,8 @@
           },
           "Version": "v2.0.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10256,8 +10258,8 @@
           },
           "Version": "v0.2.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10270,8 +10272,8 @@
           },
           "Version": "v1.1.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10284,8 +10286,8 @@
           },
           "Version": "v1.3.10",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10298,8 +10300,8 @@
           },
           "Version": "v0.2.3-0.20250311203215-f60798e515dc",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10312,8 +10314,8 @@
           },
           "Version": "v1.1.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10326,8 +10328,8 @@
           },
           "Version": "v0.10.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10340,8 +10342,8 @@
           },
           "Version": "v0.0.13-0.20250311204145-2c3ea96c31dd",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10354,8 +10356,8 @@
           },
           "Version": "v0.2.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10368,8 +10370,8 @@
           },
           "Version": "v1.0.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10382,8 +10384,8 @@
           },
           "Version": "v1.11.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10396,8 +10398,8 @@
           },
           "Version": "v1.0.3",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10410,8 +10412,8 @@
           },
           "Version": "v0.0.0-20211005043715-690c3bdd05f1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10424,8 +10426,8 @@
           },
           "Version": "v1.11.4",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10438,8 +10440,8 @@
           },
           "Version": "v2.0.0-alpha",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10452,8 +10454,8 @@
           },
           "Version": "v1.4.3",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10466,8 +10468,8 @@
           },
           "Version": "v1.7.2",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10480,8 +10482,8 @@
           },
           "Version": "v0.1.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10494,8 +10496,8 @@
           },
           "Version": "v1.10.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10508,8 +10510,8 @@
           },
           "Version": "v0.14.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10522,8 +10524,8 @@
           },
           "Version": "v0.18.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10536,8 +10538,8 @@
           },
           "Version": "v10.20.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10550,8 +10552,8 @@
           },
           "Version": "v1.3.2",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10564,8 +10566,8 @@
           },
           "Version": "v1.5.4",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10578,8 +10580,8 @@
           },
           "Version": "v24.3.25+incompatible",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10592,8 +10594,8 @@
           },
           "Version": "v1.6.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10606,8 +10608,8 @@
           },
           "Version": "v1.18.3",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10620,8 +10622,8 @@
           },
           "Version": "v1.4.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10634,8 +10636,8 @@
           },
           "Version": "v1.2.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10648,8 +10650,8 @@
           },
           "Version": "v0.7.7",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10662,8 +10664,8 @@
           },
           "Version": "v0.0.20",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10676,8 +10678,8 @@
           },
           "Version": "v0.0.16",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10690,8 +10692,8 @@
           },
           "Version": "v1.14.24",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10704,8 +10706,8 @@
           },
           "Version": "v0.0.0-20230316100256-276c6243b2f6",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10718,8 +10720,8 @@
           },
           "Version": "v0.2.2",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10732,8 +10734,8 @@
           },
           "Version": "v0.16.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10746,8 +10748,8 @@
           },
           "Version": "v0.3.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10760,8 +10762,8 @@
           },
           "Version": "v0.0.5",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10774,8 +10776,8 @@
           },
           "Version": "v0.0.0-20240510204454-f88f4562727c",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10788,8 +10790,8 @@
           },
           "Version": "v2.2.2",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10802,8 +10804,8 @@
           },
           "Version": "v0.0.0-20240102092130-5ac0b6a4141c",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10816,8 +10818,8 @@
           },
           "Version": "v0.9.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10830,8 +10832,8 @@
           },
           "Version": "v0.4.7",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10844,8 +10846,8 @@
           },
           "Version": "v1.7.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10858,8 +10860,8 @@
           },
           "Version": "v1.0.5",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10872,8 +10874,8 @@
           },
           "Version": "v1.2.12",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10886,8 +10888,8 @@
           },
           "Version": "v2.1.8",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10900,8 +10902,8 @@
           },
           "Version": "v0.8.4",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10914,8 +10916,8 @@
           },
           "Version": "v0.0.0-20220910002029-abceb7e1c41e",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10928,8 +10930,8 @@
           },
           "Version": "v1.0.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10942,8 +10944,8 @@
           },
           "Version": "v0.0.0-20231121144256-b99613f794b6",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10956,8 +10958,8 @@
           },
           "Version": "v0.43.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10970,8 +10972,8 @@
           },
           "Version": "v0.0.0-20250218142911-aa4b98e5adaa",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10984,8 +10986,8 @@
           },
           "Version": "v0.22.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10998,8 +11000,8 @@
           },
           "Version": "v0.30.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11012,8 +11014,8 @@
           },
           "Version": "v0.46.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11026,8 +11028,8 @@
           },
           "Version": "v0.17.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11040,8 +11042,8 @@
           },
           "Version": "v0.37.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11054,8 +11056,8 @@
           },
           "Version": "v0.36.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11068,8 +11070,8 @@
           },
           "Version": "v0.30.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11082,8 +11084,8 @@
           },
           "Version": "v0.0.0-20200804184101-5ec99f83aff1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11096,8 +11098,8 @@
           },
           "Version": "v0.15.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11110,8 +11112,8 @@
           },
           "Version": "v1.34.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11124,8 +11126,8 @@
           },
           "Version": "v3.0.1",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11138,8 +11140,8 @@
           },
           "Version": "v0.9.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11152,8 +11154,8 @@
           },
           "Version": "v0.9.0",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "AnalyzedBy": "gobinary"
         }
@@ -11174,8 +11176,8 @@
           "FixedVersion": "1.1.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-32285",
@@ -11184,7 +11186,7 @@
             "Name": "GitHub Security Advisory Go",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
           },
-          "Fingerprint": "sha256:63f2f89adeb5030a6f504d9465f1c6148ca5f553d55e322c008ab9c738c759a7",
+          "Fingerprint": "sha256:a4d9132bc846023a83a8bac1da0e4871b923fe245ab65cc80414c1c6391bf652",
           "Title": "github.com/buger/jsonparser: github.com/buger/jsonparser: Denial of Service via malformed JSON input",
           "Description": "The Delete function fails to properly validate offsets when processing malformed JSON input. This can lead to a negative slice index and a runtime panic, allowing a denial of service attack.",
           "Severity": "HIGH",
@@ -11237,8 +11239,8 @@
           "FixedVersion": "0.45.0",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-47914",
@@ -11247,7 +11249,7 @@
             "Name": "GitHub Security Advisory Go",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
           },
-          "Fingerprint": "sha256:d19033646bc83f5bd4bb942115e2e699bbf3c2ae7a945f73645a0de96d5d4413",
+          "Fingerprint": "sha256:e5551993894dd6757cc3fd37fa75617714864d07b388a2c86289e7b0ed178d94",
           "Title": "golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages",
           "Description": "SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.",
           "Severity": "MEDIUM",
@@ -11297,8 +11299,8 @@
           "FixedVersion": "0.45.0",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-58181",
@@ -11307,7 +11309,7 @@
             "Name": "GitHub Security Advisory Go",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
           },
-          "Fingerprint": "sha256:3226d37357faeee838884d58609a10a3330ed7d82681b45b89702ba8c8c10ea5",
+          "Fingerprint": "sha256:9bf0df9f22433872d788c245e9aa01a0501a4b1f8783e5afcfc993d42a95ef6f",
           "Title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication",
           "Description": "SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.",
           "Severity": "MEDIUM",
@@ -11361,8 +11363,8 @@
           "FixedVersion": "0.38.0",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-33809",
@@ -11371,7 +11373,7 @@
             "Name": "GitHub Security Advisory Go",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
           },
-          "Fingerprint": "sha256:eba1c1931f487712ba8a95baadf17a0825752c9be4125cc0206d1a68fc1d6a0b",
+          "Fingerprint": "sha256:67b47b06b852d4dd55238cb9ff86cd25975a6637253e6ba1bfbec38698c15cfc",
           "Title": "golang: golang.org/x/image/tiff: golang.org/x/image/tiff: Denial of Service via maliciously crafted TIFF file",
           "Description": "A maliciously crafted TIFF file can cause image decoding to attempt to allocate up 4GiB of memory, causing either excessive resource consumption or an out-of-memory error.",
           "Severity": "MEDIUM",
@@ -11419,8 +11421,8 @@
           "FixedVersion": "1.25.8, 1.26.1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-25679",
           "DataSource": {
@@ -11428,7 +11430,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:60948cf1468bbb30ffd577709638140a090d98c41d50d2ff02071ba6d3fefa7d",
+          "Fingerprint": "sha256:dafb31effc35773d8d6200aa7fed337aa0a15b1ecc82c5a4cd7b3859e5b56437",
           "Title": "net/url: Incorrect parsing of IPv6 host literals in net/url",
           "Description": "url.Parse insufficiently validated the host/authority component and accepted some invalid URLs.",
           "Severity": "HIGH",
@@ -11489,8 +11491,8 @@
           "FixedVersion": "1.26.1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-27137",
           "DataSource": {
@@ -11498,7 +11500,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:59cd7a648099ea647bb9b799d31fe0d93046b85661aff6a318a9441860f6db57",
+          "Fingerprint": "sha256:8815b059a369ea277e2dcde9722ad29d23ce58686e47fbb5f394ade963ab4d37",
           "Title": "crypto/x509: Incorrect enforcement of email constraints in crypto/x509",
           "Description": "When verifying a certificate chain which contains a certificate containing multiple email address constraints which share common local portions but different domain portions, these constraints will not be properly applied, and only the last constraint will be considered.",
           "Severity": "HIGH",
@@ -11561,8 +11563,8 @@
           "FixedVersion": "1.25.9, 1.26.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-32280",
           "DataSource": {
@@ -11570,7 +11572,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:43fac9ac459fc2c07536d78f8d27bc0ea4ca0f22d424bce3e8428c498edad927",
+          "Fingerprint": "sha256:981abeb675a94f9c1f95830d8e27877843c3c7e5f279196d2c84c62bb15054ce",
           "Title": "crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building",
           "Description": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.",
           "Severity": "HIGH",
@@ -11579,7 +11581,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 3,
             "oracle-oval": 3,
             "redhat": 3,
@@ -11604,22 +11606,16 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2456336",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2456338",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2456339",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2456340",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2456341",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2456342",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283",
             "https://errata.almalinux.org/9/ALSA-2026-14200.html",
-            "https://errata.rockylinux.org/RLSA-2026:10219",
+            "https://errata.rockylinux.org/RLSA-2026:14200",
             "https://go.dev/cl/758320",
             "https://go.dev/issue/78282",
             "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU",
             "https://linux.oracle.com/cve/CVE-2026-32280.html",
-            "https://linux.oracle.com/errata/ELSA-2026-14200.html",
+            "https://linux.oracle.com/errata/ELSA-2026-16875.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-32280",
             "https://pkg.go.dev/vuln/GO-2026-4947",
             "https://www.cve.org/CVERecord?id=CVE-2026-32280"
@@ -11642,8 +11638,8 @@
           "FixedVersion": "1.25.9, 1.26.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-32281",
@@ -11652,7 +11648,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:65f2d72e433bad3ae28b0b4d43e8d8389535e9ff1b15c0db9b25bd996a81b37e",
+          "Fingerprint": "sha256:c5e2ff0e67364be74cd781995d6d49a1806fc3e797632fdf0e7dffce808dab70",
           "Title": "crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation",
           "Description": "Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.",
           "Severity": "HIGH",
@@ -11660,7 +11656,7 @@
             "CWE-295"
           ],
           "VendorSeverity": {
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 3,
             "nvd": 3,
             "redhat": 2
@@ -11706,8 +11702,8 @@
           "FixedVersion": "1.25.9, 1.26.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-32283",
@@ -11716,7 +11712,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:706e53cc5f6d7c171dee72822672d98c4e8b01f524ad405d3368f832114fe344",
+          "Fingerprint": "sha256:70ee2476a816186fac4ee4daba745e8791d05f8a8623aa3d9cbdea78b3db7b43",
           "Title": "crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages",
           "Description": "If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources. This can lead to a denial of service. This only affects TLS 1.3.",
           "Severity": "HIGH",
@@ -11725,7 +11721,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 3,
             "nvd": 3,
             "oracle-oval": 3,
@@ -11754,15 +11750,17 @@
             "https://bugzilla.redhat.com/2456339",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2456336",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2456338",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2456339",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283",
             "https://errata.almalinux.org/9/ALSA-2026-14200.html",
-            "https://errata.rockylinux.org/RLSA-2026:11711",
+            "https://errata.rockylinux.org/RLSA-2026:14200",
             "https://go.dev/cl/763767",
             "https://go.dev/issue/78334",
             "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU",
             "https://linux.oracle.com/cve/CVE-2026-32283.html",
-            "https://linux.oracle.com/errata/ELSA-2026-14200.html",
+            "https://linux.oracle.com/errata/ELSA-2026-17075.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-32283",
             "https://pkg.go.dev/vuln/GO-2026-4870",
             "https://www.cve.org/CVERecord?id=CVE-2026-32283"
@@ -11785,8 +11783,8 @@
           "FixedVersion": "1.26.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-33810",
@@ -11795,7 +11793,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b73960fe9ab5fad52ffd6833b6fb38439dad0916682516c7b8772d56710710b9",
+          "Fingerprint": "sha256:bf6b809aef680f665b6f12b6fabd15f71437c3f000c286da6d94569d102e3605",
           "Title": "crypto/x509: golang: Go crypto/x509: Certificate validation bypass due to incorrect DNS constraint application",
           "Description": "When verifying a certificate chain containing excluded DNS constraints, these constraints are not correctly applied to wildcard DNS SANs which use a different case than the constraint. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.",
           "Severity": "HIGH",
@@ -11851,24 +11849,33 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-33811",
           "DataSource": {
             "ID": "govulndb",
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:011a9eeee9d302745564c016d0886199461ccbe7fda0d0656d77f0c104340161",
+          "Fingerprint": "sha256:9e0085d1a76afaeb174c918f944a3c756df151aa59aa84aa6fab6350b695bbf3",
           "Title": "When using LookupCNAME with the cgo DNS resolver, a very long CNAME re ...",
           "Description": "When using LookupCNAME with the cgo DNS resolver, a very long CNAME response can trigger a double-free of C memory and a crash.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-415"
+          ],
           "VendorSeverity": {
-            "bitnami": 3
+            "bitnami": 3,
+            "nvd": 3
           },
           "CVSS": {
             "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
             }
@@ -11881,7 +11888,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4981"
           ],
           "PublishedDate": "2026-05-07T20:16:42.77Z",
-          "LastModifiedDate": "2026-05-08T15:16:36.64Z"
+          "LastModifiedDate": "2026-05-12T20:23:02.333Z"
         },
         {
           "VulnerabilityID": "CVE-2026-33814",
@@ -11898,24 +11905,33 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-33814",
           "DataSource": {
             "ID": "govulndb",
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:7d3a242a2028b30a4039d253d94395cf692f490dc57946cfc10aaba12ae2ac54",
+          "Fingerprint": "sha256:bb01d6b27ef19826bc28edd9012aaff069364b869d238899dbc98f610b6ef773",
           "Title": "When processing HTTP/2 SETTINGS frames, transport will enter an infini ...",
           "Description": "When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-835"
+          ],
           "VendorSeverity": {
-            "bitnami": 3
+            "bitnami": 3,
+            "nvd": 3
           },
           "CVSS": {
             "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
             }
@@ -11929,7 +11945,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4918"
           ],
           "PublishedDate": "2026-05-07T20:16:42.88Z",
-          "LastModifiedDate": "2026-05-08T19:16:30.567Z"
+          "LastModifiedDate": "2026-05-13T14:41:59.52Z"
         },
         {
           "VulnerabilityID": "CVE-2026-39820",
@@ -11946,24 +11962,33 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-39820",
           "DataSource": {
             "ID": "govulndb",
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6880e6c4bedee8626e2a9b802abbeb8820eba1989c70626dea82a7c79310c400",
+          "Fingerprint": "sha256:fb1bbb38d63209dee5302d5bf8730f8d08cecdfd507fb2eb9cbb12e9048ca541",
           "Title": "Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ...",
           "Description": "Well-crafted inputs reaching ParseAddress, ParseAddressList, and ParseDate were able to trigger excessive CPU exhaustion and memory allocations.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
           "VendorSeverity": {
-            "bitnami": 3
+            "bitnami": 3,
+            "nvd": 3
           },
           "CVSS": {
             "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
             }
@@ -11976,7 +12001,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4986"
           ],
           "PublishedDate": "2026-05-07T20:16:43.187Z",
-          "LastModifiedDate": "2026-05-08T15:16:37.323Z"
+          "LastModifiedDate": "2026-05-13T15:10:58.65Z"
         },
         {
           "VulnerabilityID": "CVE-2026-39836",
@@ -11993,24 +12018,33 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-39836",
           "DataSource": {
             "ID": "govulndb",
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:923423b1fb2fbdc543aa4019c2aea41b5ffa44c92871d44aaffb4de1a0ddee7f",
+          "Fingerprint": "sha256:af5f83dad3c31bc1d5af63d87eac3496f0bd22a594b19c31aee08d3107f97152",
           "Title": "Panic in Dial and LookupPort when handling NUL byte on Windows in net",
           "Description": "The Dial and LookupPort functions panic on Windows when provided with an input containing a NUL (0).",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
           "VendorSeverity": {
-            "bitnami": 3
+            "bitnami": 3,
+            "nvd": 3
           },
           "CVSS": {
             "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
             }
@@ -12023,7 +12057,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4971"
           ],
           "PublishedDate": "2026-05-07T20:16:43.593Z",
-          "LastModifiedDate": "2026-05-08T22:16:29.723Z"
+          "LastModifiedDate": "2026-05-13T15:11:10.31Z"
         },
         {
           "VulnerabilityID": "CVE-2026-42499",
@@ -12040,8 +12074,8 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-42499",
           "DataSource": {
@@ -12049,7 +12083,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4e6fa80521d8dedf220118892bb1af4979d2e5f86ad7451a9e9247bbeae43eef",
+          "Fingerprint": "sha256:a0ac65f3980dfe321af58fa220dc94e7608fcb163f7b4cb25d219097ae43e8e2",
           "Title": "Pathological inputs could cause DoS through consumePhrase when parsing ...",
           "Description": "Pathological inputs could cause DoS through consumePhrase when parsing an email address according to RFC 5322.",
           "Severity": "HIGH",
@@ -12070,7 +12104,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4977"
           ],
           "PublishedDate": "2026-05-07T20:16:44.54Z",
-          "LastModifiedDate": "2026-05-08T22:16:33.183Z"
+          "LastModifiedDate": "2026-05-13T16:59:17.563Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27142",
@@ -12087,8 +12121,8 @@
           "FixedVersion": "1.25.8, 1.26.1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-27142",
           "DataSource": {
@@ -12096,7 +12130,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:0d86a7c0731f7da13071f3b223c835ab81e4304b47398d3068d3bab238c63716",
+          "Fingerprint": "sha256:c4376fbf18dd13af876d48fac555fb94358db5a1aab5a0d146144c56eff2eae8",
           "Title": "html/template: URLs in meta content attribute actions are not escaped in html/template",
           "Description": "Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value \"refresh\". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow \"url=\" by setting htmlmetacontenturlescape=0.",
           "Severity": "MEDIUM",
@@ -12104,7 +12138,7 @@
             "CWE-79"
           ],
           "VendorSeverity": {
-            "amazon": 2,
+            "amazon": 3,
             "bitnami": 2,
             "redhat": 2
           },
@@ -12145,8 +12179,8 @@
           "FixedVersion": "1.25.9, 1.26.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-32282",
@@ -12155,7 +12189,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:33f4976a64ddf5dc2d48148da11c3c7d408b40a8803cb71b555a49406e169dda",
+          "Fingerprint": "sha256:2de8f20368bf15bbab19ed895cd1383192e9379b3442fc891c86c7cabe97bc34",
           "Title": "golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root",
           "Description": "On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.",
           "Severity": "MEDIUM",
@@ -12164,7 +12198,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 2,
             "nvd": 2,
             "oracle-oval": 3,
@@ -12193,15 +12227,17 @@
             "https://bugzilla.redhat.com/2456339",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2456336",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2456338",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2456339",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283",
             "https://errata.almalinux.org/9/ALSA-2026-14200.html",
-            "https://errata.rockylinux.org/RLSA-2026:11711",
+            "https://errata.rockylinux.org/RLSA-2026:14200",
             "https://go.dev/cl/763761",
             "https://go.dev/issue/78293",
             "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU",
             "https://linux.oracle.com/cve/CVE-2026-32282.html",
-            "https://linux.oracle.com/errata/ELSA-2026-14200.html",
+            "https://linux.oracle.com/errata/ELSA-2026-17075.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-32282",
             "https://pkg.go.dev/vuln/GO-2026-4864",
             "https://www.cve.org/CVERecord?id=CVE-2026-32282"
@@ -12224,8 +12260,8 @@
           "FixedVersion": "1.25.9, 1.26.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-32288",
@@ -12234,7 +12270,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:294d7b38bd4de46dd8990eeb81aae81ee2f07e4bd5aef87c6df5a030833f3098",
+          "Fingerprint": "sha256:66761c08b3a3e7fc15e5da11425e6601c841c633be4e53b75c6538b50c0d47f5",
           "Title": "archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive",
           "Description": "tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the \"old GNU sparse map\" format.",
           "Severity": "MEDIUM",
@@ -12242,11 +12278,11 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "amazon": 3,
+            "amazon": 2,
             "azure": 2,
             "bitnami": 2,
             "nvd": 2,
-            "photon": 3,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -12290,8 +12326,8 @@
           "FixedVersion": "1.25.9, 1.26.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-32289",
@@ -12300,7 +12336,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2f66db0033bc2fd3f2c1fe2b4e224fc5f753493c2f5ab89bacf308d1aca274d7",
+          "Fingerprint": "sha256:635a43e742ffae1ec674c5faf631a03ab2ac939f0892d71bddc5d0f43f684180",
           "Title": "html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals",
           "Description": "Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.",
           "Severity": "MEDIUM",
@@ -12308,10 +12344,10 @@
             "CWE-79"
           ],
           "VendorSeverity": {
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 2,
             "nvd": 2,
-            "photon": 4,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -12355,8 +12391,8 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-39823",
           "DataSource": {
@@ -12364,10 +12400,13 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3fe40e3578026a6edd4c7108bae83db10f44da1d91d82b63afa910424869624a",
+          "Fingerprint": "sha256:4c6962ebb66f99bb8e4acf548a3f64b1616414379ae719d30b6e6a5abe957618",
           "Title": "CVE-2026-27142 fixed a vulnerability in which URLs were not correctly  ...",
           "Description": "CVE-2026-27142 fixed a vulnerability in which URLs were not correctly escaped inside of a \u003cmeta\u003e tag's \u003ccontent\u003e attribute. If the URL content were to insert ASCII whitespaces around the '=' rune inside of the \u003ccontent\u003e attribute, the escaper would fail to similarly escape it, leading to XSS.",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-79"
+          ],
           "VendorSeverity": {
             "bitnami": 2
           },
@@ -12385,7 +12424,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4982"
           ],
           "PublishedDate": "2026-05-07T20:16:43.29Z",
-          "LastModifiedDate": "2026-05-08T15:16:37.5Z"
+          "LastModifiedDate": "2026-05-13T16:58:45.697Z"
         },
         {
           "VulnerabilityID": "CVE-2026-39825",
@@ -12402,8 +12441,8 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-39825",
           "DataSource": {
@@ -12411,7 +12450,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:9538c5e74b6319e0cc52c4d2f17f35a807bbc7a408eebafcdf33885e46121e65",
+          "Fingerprint": "sha256:68606103b3a0344c930837b616fb1e4399af1b1fd5a22a71a24bd0f9265719f4",
           "Title": "ReverseProxy can forward queries containing parameters not visible to  ...",
           "Description": "ReverseProxy can forward queries containing parameters not visible to Rewrite functions. When used with a Rewrite function, or a Director function which parses query parameters, ReverseProxy sanitizes the forwarded request to remove query parameters which are not parsed by url.ParseQuery. ReverseProxy does not take ParseQuery's limit on the total number of query parameters (controlled by GODEBUG=urlmaxqueryparams=N) into account. This can permit ReverseProxy to forward a request containing a query parameter that is not visible to the Rewrite function. For example, the query \"a1=x\u0026a2=x\u0026...\u0026a10000=x\u0026hidden=y\" can forward the parameter \"hidden=y\" while hiding it from the proxy's Rewrite function.",
           "Severity": "MEDIUM",
@@ -12432,7 +12471,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4976"
           ],
           "PublishedDate": "2026-05-07T20:16:43.39Z",
-          "LastModifiedDate": "2026-05-08T22:16:29.547Z"
+          "LastModifiedDate": "2026-05-13T16:58:56.39Z"
         },
         {
           "VulnerabilityID": "CVE-2026-39826",
@@ -12449,8 +12488,8 @@
           "FixedVersion": "1.25.10, 1.26.3",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-39826",
           "DataSource": {
@@ -12458,10 +12497,13 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:1e4ded5a7951479e2013b2217a91301b365950b019147901eda3e42f3c71dc6a",
+          "Fingerprint": "sha256:78b39f4b383ebcf1d73301251efb5d87b3d7278f15d0a5f708b57aa22a7434f2",
           "Title": "If a trusted template author were to write a \u003cscript\u003e tag containing a ...",
           "Description": "If a trusted template author were to write a \u003cscript\u003e tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the \u003cscript\u003e block.",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-116"
+          ],
           "VendorSeverity": {
             "bitnami": 2
           },
@@ -12479,7 +12521,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4980"
           ],
           "PublishedDate": "2026-05-07T20:16:43.49Z",
-          "LastModifiedDate": "2026-05-08T15:16:37.68Z"
+          "LastModifiedDate": "2026-05-13T16:59:07.48Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27138",
@@ -12496,8 +12538,8 @@
           "FixedVersion": "1.26.1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-27138",
           "DataSource": {
@@ -12505,7 +12547,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:cb23cb412c75680c674f6eb95d750b006246597b41e9e9c82ec30c52f77d30a3",
+          "Fingerprint": "sha256:3fae2954595e9ae19d2f1f2bb92e1185eac7f17fadbb075438db2f1247ba3219",
           "Title": "crypto/x509: Panic in name constraint checking for malformed certificates in crypto/x509",
           "Description": "Certificate verification can panic when a certificate in the chain has an empty DNS name and another certificate in the chain has excluded name constraints. This can crash programs that are either directly verifying X.509 certificate chains, or those that use TLS.",
           "Severity": "LOW",
@@ -12554,8 +12596,8 @@
           "FixedVersion": "1.25.8, 1.26.1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:416e88117f32ec800d6c3d277e75d16bea2258e417b77632535bcf149c8c3b4e",
-            "DiffID": "sha256:f5bf59009ca78db91cf057e4c5e9e3ff44f235fedf360b4263daed32c255cb2c"
+            "Digest": "sha256:5460dfa56ee12cf8d557166eda4a2fef429e5e007ed3e6f0c91b90e06fb1fbf6",
+            "DiffID": "sha256:f6367a16dafd6130a88fc737196ff81862947241c707f01a49d16a68de0252a9"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-27139",
           "DataSource": {
@@ -12563,7 +12605,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:fb9fdcec8bbd4b0ce77ce8c4a6b06a7821d675ce4d437d545f643f49beb048cc",
+          "Fingerprint": "sha256:5cc53d2cfeca470141f21654afd0a48da17195236e0d2604d0884e23ca5ceace",
           "Title": "os: FileInfo can escape from a Root in golang os module",
           "Description": "On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.",
           "Severity": "LOW",
@@ -12571,7 +12613,7 @@
             "CWE-22"
           ],
           "VendorSeverity": {
-            "amazon": 2,
+            "amazon": 3,
             "azure": 1,
             "bitnami": 1,
             "redhat": 1
